@@ -13,6 +13,8 @@ type Props = {
 export const TodoList: React.FC<Props> = ({ toggleEditMode }) => {
   const todos: TodoType[] = useAppSelector(selectFilteredTodos);
 
+  const isTodosEmpty = todos.length === 0;
+
   return (
     <Container
       className="border rounded shadow p-4 mb-3"
@@ -29,6 +31,8 @@ export const TodoList: React.FC<Props> = ({ toggleEditMode }) => {
             toggleEditMode={toggleEditMode}
           />
         ))}
+
+        {isTodosEmpty && <p className="fs-2 text-center">No todos available</p>}
       </div>
     </Container>
   );

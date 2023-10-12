@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Buy groceries",
+    "description": "Buy vegetables, fruits, and milk from the store.",
+    "isDone": false
+  },
+  {
+    "id": 2,
+    "name": "Finish project proposal",
+    "description": "Complete the project proposal and send it to the client.",
+    "isDone": true
+  },
+  {
+    "id": 3,
+    "name": "Go for a run",
+    "description": "Go for a 5 km run in the park.",
+    "isDone": false
+  }
+]

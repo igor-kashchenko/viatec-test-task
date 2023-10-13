@@ -18,11 +18,14 @@ export const TodoList: React.FC<Props> = ({ toggleEditMode }) => {
   return (
     <Container
       className="border rounded shadow p-4 mb-3"
-      style={{ maxWidth: "500px" }}
+      style={{ maxWidth: "700px" }}
     >
       <GroupFilter />
 
-      <div style={{ height: "340px" }} className="overflow-auto">
+      <div
+        style={{ height: "340px", overflowY: "auto" }}
+        className="d-flex flex-column align-items-center"
+      >
         {todos.map((todo, i) => (
           <Todo
             todo={todo}

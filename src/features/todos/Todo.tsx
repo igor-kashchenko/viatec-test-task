@@ -42,7 +42,7 @@ export const Todo: React.FC<Props> = ({ todo, isLastTodo, toggleEditMode }) => {
   };
 
   return (
-    <Row>
+    <Row className="w-100">
       <Col>
         <div
           className={todoClassNames}
